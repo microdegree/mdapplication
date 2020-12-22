@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+
+
+
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        tools:context="org.microdegree.com.app.exp.MainActivity"
+        android:background="@color/grey_white_smoke"
+        >
+
+        <TextView
+            android:id="@+id/headerTextRView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            tools:text = "3pm - 4pm"
+            android:text="3pm - 4pm"
+            android:textColor="@color/black_alpha_40"
+            android:padding="8dp"
+
+            android:layout_marginLeft="40dp"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

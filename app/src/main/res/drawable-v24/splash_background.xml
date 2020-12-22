@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<item android:drawable="@color/colorPrimary" />-->
+
+<!--    <item>
+        <gradient
+            android:startColor="@color/splash_gradient_start"
+            android:endColor="@color/splash_gradient_end"
+            android:angle="-270" />
+    </item>-->
+
+   <!-- <item>
+        <bitmap android:src="@mipmap/ic_launcher3"
+            android:gravity="center" />
+
+    </item>-->
+
+ <!--   <item>
+        <shape>
+            <gradient
+                android:startColor="#ff2d9a59"
+                android:centerColor="#ff42959a"
+                android:endColor="#ff23729a"
+                android:angle="135"/>
+        </shape>
+    </item>-->
+
+    <!-- Ibiza SUnset UIGradient https://uigradients.com/#IbizaSunset-->
+    <item>
+        <shape>
+            <gradient
+                android:startColor="@color/grey_white_smoke"
+                android:endColor="@color/grey_white_smoke"
+
+                android:angle="90"/>
+        </shape>
+    </item>
+
+  <!--  <item>
+        <shape>
+            <gradient
+                android:startColor="#fe8c00"
+                android:endColor="#f83600"
+
+                android:angle="135"/>
+        </shape>
+    </item>-->
+
+   <!-- <item>
+        <bitmap android:src="@mipmap/ic_launcher3"
+            android:gravity="center" />
+
+    </item>-->
+
+    <item>
+        <bitmap android:src="@mipmap/tv_splash12"
+            android:gravity="center" />
+
+    </item>
+
+</layer-list>
+
+

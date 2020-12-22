@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (C) 2017 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="course"
+            type="org.microdegree.com.app.exp.vo.CourseModel" />
+
+
+    </data>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:id="@+id/waitListItemLayout"
+        android:elevation="2dp"
+        android:shadowRadius="1"
+
+        android:layout_marginRight="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="8dp"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <!--<Button
+                android:id="@+id/inVisibleButtonItem"
+                android:layout_width="16dp"
+                android:layout_height="match_parent"
+
+                android:visibility="invisible"
+                />-->
+
+            <ImageView
+                android:id="@+id/tvChannelLogo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/python"
+                app:layout_constraintWidth_percent=".15"
+                android:layout_marginTop="-60dp"
+                />
+
+            <!--    <TextView
+                    android:id="@+id/wListItemCustTokenNum"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+
+                    tools:text="C101"
+                    android:text="@{channel.channelId}"
+                    android:textSize="24sp"
+                    android:layout_marginLeft="16dp"
+
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:fontFamily="@font/roboto_light"
+
+                    />-->
+
+            <!--            <Button-->
+            <!--                android:id="@+id/viewmore"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="20dp"-->
+            <!--                android:layout_marginBottom="14dp"-->
+            <!--                android:layout_weight="3"-->
+            <!--                android:background="@drawable/my_gradient_drawable"-->
+            <!--                android:fontFamily="@font/abhaya_libre"-->
+            <!--                android:text="View More"-->
+
+            <!--                android:textColor="@color/white"-->
+            <!--                android:layout_marginLeft="120dp"-->
+            <!--                android:layout_marginRight="140dp"-->
+            <!--                android:textSize="9sp"-->
+            <!--                app:layout_constraintBottom_toBottomOf="@+id/wListItemCustMobileNum"-->
+            <!--                tools:ignore="MissingConstraints"-->
+            <!--                tools:layout_editor_absoluteX="110dp"-->
+            <!--                tools:text="View More" />-->
+
+
+            <TextView
+                android:id="@+id/wListItemCustMobileNum"
+                android:layout_width="240dp"
+                android:layout_height="match_parent"
+
+                android:layout_marginTop="265dp"
+                android:fontFamily="@font/roboto_light"
+
+                android:gravity="left"
+
+                android:paddingLeft="20dp"
+                android:text="@{course.courseName}"
+                android:textColor="#000"
+                android:textSize="13sp"
+
+                android:textStyle="bold"
+                android:typeface="monospace"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvChannelLogo"
+                app:layout_constraintWidth_percent=".6"
+                tools:layout_editor_absoluteX="0dp"
+                tools:text="Star Plus" />
+            <TextView
+                android:id="@+id/wListItemCustMobileNum1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="28dp"
+                android:fontFamily="@font/roboto_light"
+
+                android:gravity="left"
+
+                android:paddingLeft="20dp"
+                android:text="@{course.courseSkills}"
+                android:textColor="#000"
+                android:textSize="11sp"
+                android:layout_marginTop="1dp"
+                android:textStyle="bold"
+                android:typeface="monospace"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/wListItemCustMobileNum"
+                app:layout_constraintWidth_percent=".6"
+                tools:layout_editor_absoluteX="0dp"
+                tools:text="Star Plus" />
+
+            <ImageView
+                android:id="@+id/wListItemrupeeIcon"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="25dp"
+
+                android:layout_marginTop="250dp"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/wListItemCustMobileNum"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent=".05"
+                app:srcCompat="@drawable/ic_rupee_black2"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/wListItemPrice"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="248dp"
+                android:fontFamily="@font/roboto_light"
+                android:gravity="center"
+                android:text="@{course.coursePrice}"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/wListItemrupeeIcon"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="15" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</layout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "548368035575",
+    "firebase_url": "https://md-android-f745b.firebaseio.com",
+    "project_id": "md-android-f745b",
+    "storage_bucket": "md-android-f745b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:548368035575:android:526c44df143a5ff9a76df2",
+        "android_client_info": {
+          "package_name": "org.microdegree.com.app.exp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "548368035575-qis90nbmhfn7c37k0kkkh7gf2rtmjiu0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATJ3UDFFwX5t4XILZcf3POHweWbvqXkIA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "548368035575-qis90nbmhfn7c37k0kkkh7gf2rtmjiu0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
